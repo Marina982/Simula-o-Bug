@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade com Bugfix</title>
+  <style>
+    #modal {
+      display: none;
+      position: fixed;
+      background: #eee;
+      padding: 20px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Funcionalidade 1: Mensagem de Boas-Vindas -->
+  <section>
+    <h2>Mensagem de Boas-Vindas</h2>
+    <button onclick="mostrarMensagem()">Entrar</button>
+    <p id="mensagem"></p>
+  </section>
+
+  <!-- Funcionalidade 2: Modal de Ajuda -->
+  <section>
+    <h2>Modal de Ajuda</h2>
+    <button onclick="abrirModal()">Ajuda</button>
+    <div id="modal">
+      <p>Como posso te ajudar?</p>
+      <button onclick="fecharModal()">Fechar</button>
+    </div>
+  </section>
+
+  <script>
+    // Funcionalidade 1
+    function mostrarMensagem() {
+      const mensagem = document.getElementById("mensagem");
+      if (mensagem) {
+        mensagem.innerText = "Bem-vindo(a), Marina!";
+      }
+    }
+
+    // Funcionalidade 2
+    function abrirModal() {
+      const modal = document.getElementById("modal");
+      if (modal) {
+        modal.style.display = "block";
+      }
+    }
+
+    function fecharModal() {
+      const modal = document.getElementById("modal");
+      if (modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
