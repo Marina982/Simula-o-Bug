@@ -3,32 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Atividade com Bugfix</title>
-  <style>
-    #modal {
-      display: none;
-      position: fixed;
-      background: #eee;
-      padding: 20px;
-      border: 1px solid #333;
-    }
-  </style>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; color: #333;">
 
   <!-- Funcionalidade 1: Mensagem de Boas-Vindas -->
-  <section>
-    <h2>Mensagem de Boas-Vindas</h2>
-    <button onclick="mostrarMensagem()">Entrar</button>
-    <p id="mensagem"></p>
+  <section style="margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 20px;">
+    <h2 style="color: #0066cc;">Mensagem de Boas-Vindas</h2>
+    <button onclick="mostrarMensagem()" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px;">Entrar</button>
+    <p id="mensagem" style="margin-top: 10px; font-weight: bold;"></p>
   </section>
 
   <!-- Funcionalidade 2: Modal de Ajuda -->
-  <section>
-    <h2>Modal de Ajuda</h2>
-    <button onclick="abrirModal()">Ajuda</button>
-    <div id="modal">
-      <p>Como posso te ajudar?</p>
-      <button onclick="fecharModal()">Fechar</button>
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #0066cc;">Modal de Ajuda</h2>
+    <button onclick="abrirModal()" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Ajuda</button>
+    <div id="modal" style="display: none; position: fixed; top: 30%; left: 30%; width: 300px; background: #fff; padding: 20px; border: 2px solid #333; box-shadow: 0 0 10px rgba(0,0,0,0.3); z-index: 1000;">
+      <p style="margin-bottom: 20px;">Como posso te ajudar?</p>
+      <button onclick="fecharModal()" style="padding: 8px 16px; background-color: #dc3545; color: white; border: none; border-radius: 5px;">Fechar</button>
     </div>
   </section>
 
